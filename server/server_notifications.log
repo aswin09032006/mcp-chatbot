@@ -1,0 +1,56 @@
+[2026-02-15T05:55:00.036Z] Received: {"method":"notifications/task_due","params":{"userId":"698b2c259f503feab3bc4b4b","instruction":"/usr/bin/firefox --headless","taskId":"task_1771134323358_zouxzi1b7"}}
+[2026-02-15T05:55:00.057Z] Received: {"method":"notifications/task_due","params":{"userId":"698b2c259f503feab3bc4b4b","instruction":"search for AI news","taskId":"task_1770917663543_3s3p5gixn"}}
+[2026-02-15T05:55:00.059Z] Received: {"method":"notifications/task_due","params":{"userId":"698b2c259f503feab3bc4b4b","instruction":"browser_search AI","taskId":"task_1770917651171_d48ntb4c9"}}
+[2026-02-15T05:55:00.078Z] Received: {"method":"notifications/task_due","params":{"userId":"698b2c259f503feab3bc4b4b","instruction":"browse news for AI","taskId":"task_1770917627288_jv0aveup4"}}
+[2026-02-15T05:55:00.079Z] Received: {"method":"notifications/task_due","params":{"userId":"698b2c259f503feab3bc4b4b","instruction":"browser_search","taskId":"task_1770917606820_leu1u403t"}}
+[2026-02-15T05:56:00.026Z] Received: {"method":"notifications/task_due","params":{"userId":"698b2c259f503feab3bc4b4b","instruction":"google news ai","taskId":"task_1771134906269_2l2thwpxj"}}
+[2026-02-15T05:56:00.042Z] Received: {"method":"notifications/task_due","params":{"userId":"698b2c259f503feab3bc4b4b","instruction":"/usr/bin/firefox --headless","taskId":"task_1771134323358_zouxzi1b7"}}
+[2026-02-15T05:56:00.044Z] Received: {"method":"notifications/task_due","params":{"userId":"698b2c259f503feab3bc4b4b","instruction":"search for AI news","taskId":"task_1770917663543_3s3p5gixn"}}
+[2026-02-15T05:56:00.064Z] Received: {"method":"notifications/task_due","params":{"userId":"698b2c259f503feab3bc4b4b","instruction":"browser_search AI","taskId":"task_1770917651171_d48ntb4c9"}}
+[2026-02-15T05:56:00.065Z] Received: {"method":"notifications/task_due","params":{"userId":"698b2c259f503feab3bc4b4b","instruction":"browse news for AI","taskId":"task_1770917627288_jv0aveup4"}}
+[2026-02-15T05:56:00.079Z] Received: {"method":"notifications/task_due","params":{"userId":"698b2c259f503feab3bc4b4b","instruction":"browser_search","taskId":"task_1770917606820_leu1u403t"}}
+[2026-02-15T05:57:00.011Z] Received: {"method":"notifications/task_due","params":{"userId":"698b2c259f503feab3bc4b4b","instruction":"browser_search","taskId":"task_1770917606820_leu1u403t"}}
+[2026-02-15T05:57:00.024Z] Received: {"method":"notifications/task_due","params":{"userId":"698b2c259f503feab3bc4b4b","instruction":"browse news for AI","taskId":"task_1770917627288_jv0aveup4"}}
+[2026-02-15T05:57:00.035Z] Received: {"method":"notifications/task_due","params":{"userId":"698b2c259f503feab3bc4b4b","instruction":"browser_search AI","taskId":"task_1770917651171_d48ntb4c9"}}
+[2026-02-15T05:57:00.049Z] Received: {"method":"notifications/task_due","params":{"userId":"698b2c259f503feab3bc4b4b","instruction":"search for AI news","taskId":"task_1770917663543_3s3p5gixn"}}
+[2026-02-15T05:57:00.056Z] Received: {"method":"notifications/task_due","params":{"userId":"698b2c259f503feab3bc4b4b","instruction":"/usr/bin/firefox --headless","taskId":"task_1771134323358_zouxzi1b7"}}
+[2026-02-15T05:57:00.072Z] Received: {"method":"notifications/task_due","params":{"userId":"698b2c259f503feab3bc4b4b","instruction":"google news ai","taskId":"task_1771134906269_2l2thwpxj"}}
+[2026-02-15T05:57:45.622Z] Received: {"method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:57:46.636Z] Received: {"method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:57:47.655Z] Received: {"method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:57:48.659Z] Received: {"method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:57:49.673Z] Received: {"method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:57:50.689Z] Received: {"method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:57:51.689Z] Received: {"method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:57:52.687Z] Received: {"method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:57:53.701Z] Received: {"method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:57:54.707Z] Received: {"method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:57:55.712Z] Received: {"method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:57:56.719Z] Received: {"method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:57:57.720Z] Received: {"method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:57:58.727Z] Received: {"method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:57:59.730Z] Received: {"method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:58:00.744Z] Received: {"method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:58:01.754Z] Received: {"method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:58:02.766Z] Received: {"method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:58:03.767Z] Received: {"method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:58:04.772Z] Received: {"method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:58:05.787Z] Received: {"method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:58:06.802Z] Received: {"method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:58:07.813Z] Received: {"method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:58:08.825Z] Received: {"method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:58:09.827Z] Received: {"method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:58:10.841Z] Received: {"method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:58:11.855Z] Received: {"method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:58:12.863Z] Received: {"method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:58:13.877Z] Received: {"method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:58:14.889Z] Received: {"method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:58:15.904Z] Received: {"method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:58:16.906Z] Received: {"method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:58:17.918Z] Received: {"method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:58:18.928Z] Received: {"method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:58:19.941Z] Received: {"method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:58:20.954Z] Received: {"method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:58:21.954Z] Received: {"method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:58:22.955Z] Received: {"method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:58:23.967Z] Received: {"method":"notifications/test","params":{"message":"Hello"}}

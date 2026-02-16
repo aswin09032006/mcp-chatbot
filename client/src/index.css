@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body {
+  @apply h-screen overflow-hidden;
+  color: var(--color-text-primary); /* Fallback/Direct use of variable */
+  background-color: var(--bg-primary);
+  font-family: 'DM Sans', system-ui, sans-serif;
+}
+
+.glass {
+  @apply backdrop-blur-md border border-creozen-border;
+  background-color: color-mix(in srgb, var(--bg-secondary) 50%, transparent);
+}
+
+.glass-card {
+  @apply backdrop-blur-xl border border-creozen-border rounded-xl transition-all duration-300;
+  background-color: color-mix(in srgb, var(--bg-secondary) 40%, transparent);
+}
+
+/* Custom Scrollbar - Minimalist */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+::-webkit-scrollbar-thumb {
+  background: #333; 
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+/* Orb Glow - more subtle */
+.orb-glow {
+    background: radial-gradient(circle at center, rgba(0, 144, 255, 0.15) 0%, rgba(0, 0, 0, 0) 70%);
+}

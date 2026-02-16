@@ -1,0 +1,14 @@
+{
+    "watch": [
+        "src"
+    ],
+    "ignore": [
+        "scheduler_data.json",
+        "scheduler_data.json.tmp",
+        "scheduler.log",
+        "*.log",
+        "node_modules"
+    ],
+    "ext": "js,json",
+    "exec": "node src/index.js"
+}

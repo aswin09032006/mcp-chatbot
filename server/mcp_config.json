@@ -1,0 +1,52 @@
+{
+    "servers": {
+        "echo": {
+            "command": "node",
+            "args": [
+                "src/mcp/echo-server.js"
+            ]
+        },
+        "google": {
+            "command": "node",
+            "args": [
+                "src/mcp/servers/google.js"
+            ]
+        },
+        "scheduler": {
+            "command": "node",
+            "args": [
+                "src/mcp/servers/scheduler.js"
+            ]
+        },
+        "utils": {
+            "command": "node",
+            "args": [
+                "src/mcp/servers/utils.js"
+            ]
+        },
+        "memory": {
+            "command": "node",
+            "args": [
+                "src/mcp/servers/memory.js"
+            ]
+        },
+        "planner": {
+            "command": "node",
+            "args": [
+                "src/mcp/servers/planner.js"
+            ]
+        },
+        "github": {
+            "command": "node",
+            "args": [
+                "src/mcp/servers/github.js"
+            ]
+        },
+        "database": {
+            "command": "node",
+            "args": [
+                "src/mcp/servers/database.js"
+            ]
+        }
+    }
+}

@@ -1,0 +1,56 @@
+[2026-02-15T05:55:00.032Z] from scheduler: {"jsonrpc":"2.0","method":"notifications/task_due","params":{"userId":"698b2c259f503feab3bc4b4b","instruction":"/usr/bin/firefox --headless","taskId":"task_1771134323358_zouxzi1b7"}}
+[2026-02-15T05:55:00.056Z] from scheduler: {"jsonrpc":"2.0","method":"notifications/task_due","params":{"userId":"698b2c259f503feab3bc4b4b","instruction":"search for AI news","taskId":"task_1770917663543_3s3p5gixn"}}
+[2026-02-15T05:55:00.058Z] from scheduler: {"jsonrpc":"2.0","method":"notifications/task_due","params":{"userId":"698b2c259f503feab3bc4b4b","instruction":"browser_search AI","taskId":"task_1770917651171_d48ntb4c9"}}
+[2026-02-15T05:55:00.077Z] from scheduler: {"jsonrpc":"2.0","method":"notifications/task_due","params":{"userId":"698b2c259f503feab3bc4b4b","instruction":"browse news for AI","taskId":"task_1770917627288_jv0aveup4"}}
+[2026-02-15T05:55:00.079Z] from scheduler: {"jsonrpc":"2.0","method":"notifications/task_due","params":{"userId":"698b2c259f503feab3bc4b4b","instruction":"browser_search","taskId":"task_1770917606820_leu1u403t"}}
+[2026-02-15T05:56:00.025Z] from scheduler: {"jsonrpc":"2.0","method":"notifications/task_due","params":{"userId":"698b2c259f503feab3bc4b4b","instruction":"google news ai","taskId":"task_1771134906269_2l2thwpxj"}}
+[2026-02-15T05:56:00.041Z] from scheduler: {"jsonrpc":"2.0","method":"notifications/task_due","params":{"userId":"698b2c259f503feab3bc4b4b","instruction":"/usr/bin/firefox --headless","taskId":"task_1771134323358_zouxzi1b7"}}
+[2026-02-15T05:56:00.043Z] from scheduler: {"jsonrpc":"2.0","method":"notifications/task_due","params":{"userId":"698b2c259f503feab3bc4b4b","instruction":"search for AI news","taskId":"task_1770917663543_3s3p5gixn"}}
+[2026-02-15T05:56:00.063Z] from scheduler: {"jsonrpc":"2.0","method":"notifications/task_due","params":{"userId":"698b2c259f503feab3bc4b4b","instruction":"browser_search AI","taskId":"task_1770917651171_d48ntb4c9"}}
+[2026-02-15T05:56:00.064Z] from scheduler: {"jsonrpc":"2.0","method":"notifications/task_due","params":{"userId":"698b2c259f503feab3bc4b4b","instruction":"browse news for AI","taskId":"task_1770917627288_jv0aveup4"}}
+[2026-02-15T05:56:00.078Z] from scheduler: {"jsonrpc":"2.0","method":"notifications/task_due","params":{"userId":"698b2c259f503feab3bc4b4b","instruction":"browser_search","taskId":"task_1770917606820_leu1u403t"}}
+[2026-02-15T05:57:00.010Z] from scheduler: {"jsonrpc":"2.0","method":"notifications/task_due","params":{"userId":"698b2c259f503feab3bc4b4b","instruction":"browser_search","taskId":"task_1770917606820_leu1u403t"}}
+[2026-02-15T05:57:00.023Z] from scheduler: {"jsonrpc":"2.0","method":"notifications/task_due","params":{"userId":"698b2c259f503feab3bc4b4b","instruction":"browse news for AI","taskId":"task_1770917627288_jv0aveup4"}}
+[2026-02-15T05:57:00.034Z] from scheduler: {"jsonrpc":"2.0","method":"notifications/task_due","params":{"userId":"698b2c259f503feab3bc4b4b","instruction":"browser_search AI","taskId":"task_1770917651171_d48ntb4c9"}}
+[2026-02-15T05:57:00.049Z] from scheduler: {"jsonrpc":"2.0","method":"notifications/task_due","params":{"userId":"698b2c259f503feab3bc4b4b","instruction":"search for AI news","taskId":"task_1770917663543_3s3p5gixn"}}
+[2026-02-15T05:57:00.056Z] from scheduler: {"jsonrpc":"2.0","method":"notifications/task_due","params":{"userId":"698b2c259f503feab3bc4b4b","instruction":"/usr/bin/firefox --headless","taskId":"task_1771134323358_zouxzi1b7"}}
+[2026-02-15T05:57:00.071Z] from scheduler: {"jsonrpc":"2.0","method":"notifications/task_due","params":{"userId":"698b2c259f503feab3bc4b4b","instruction":"google news ai","taskId":"task_1771134906269_2l2thwpxj"}}
+[2026-02-15T05:57:45.621Z] from scheduler: {"jsonrpc":"2.0","method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:57:46.635Z] from scheduler: {"jsonrpc":"2.0","method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:57:47.654Z] from scheduler: {"jsonrpc":"2.0","method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:57:48.658Z] from scheduler: {"jsonrpc":"2.0","method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:57:49.672Z] from scheduler: {"jsonrpc":"2.0","method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:57:50.688Z] from scheduler: {"jsonrpc":"2.0","method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:57:51.688Z] from scheduler: {"jsonrpc":"2.0","method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:57:52.687Z] from scheduler: {"jsonrpc":"2.0","method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:57:53.700Z] from scheduler: {"jsonrpc":"2.0","method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:57:54.706Z] from scheduler: {"jsonrpc":"2.0","method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:57:55.711Z] from scheduler: {"jsonrpc":"2.0","method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:57:56.718Z] from scheduler: {"jsonrpc":"2.0","method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:57:57.719Z] from scheduler: {"jsonrpc":"2.0","method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:57:58.726Z] from scheduler: {"jsonrpc":"2.0","method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:57:59.729Z] from scheduler: {"jsonrpc":"2.0","method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:58:00.743Z] from scheduler: {"jsonrpc":"2.0","method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:58:01.753Z] from scheduler: {"jsonrpc":"2.0","method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:58:02.765Z] from scheduler: {"jsonrpc":"2.0","method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:58:03.766Z] from scheduler: {"jsonrpc":"2.0","method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:58:04.772Z] from scheduler: {"jsonrpc":"2.0","method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:58:05.786Z] from scheduler: {"jsonrpc":"2.0","method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:58:06.801Z] from scheduler: {"jsonrpc":"2.0","method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:58:07.812Z] from scheduler: {"jsonrpc":"2.0","method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:58:08.824Z] from scheduler: {"jsonrpc":"2.0","method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:58:09.826Z] from scheduler: {"jsonrpc":"2.0","method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:58:10.840Z] from scheduler: {"jsonrpc":"2.0","method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:58:11.854Z] from scheduler: {"jsonrpc":"2.0","method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:58:12.862Z] from scheduler: {"jsonrpc":"2.0","method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:58:13.875Z] from scheduler: {"jsonrpc":"2.0","method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:58:14.888Z] from scheduler: {"jsonrpc":"2.0","method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:58:15.903Z] from scheduler: {"jsonrpc":"2.0","method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:58:16.905Z] from scheduler: {"jsonrpc":"2.0","method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:58:17.916Z] from scheduler: {"jsonrpc":"2.0","method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:58:18.927Z] from scheduler: {"jsonrpc":"2.0","method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:58:19.940Z] from scheduler: {"jsonrpc":"2.0","method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:58:20.953Z] from scheduler: {"jsonrpc":"2.0","method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:58:21.953Z] from scheduler: {"jsonrpc":"2.0","method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:58:22.954Z] from scheduler: {"jsonrpc":"2.0","method":"notifications/test","params":{"message":"Hello"}}
+[2026-02-15T05:58:23.966Z] from scheduler: {"jsonrpc":"2.0","method":"notifications/test","params":{"message":"Hello"}}

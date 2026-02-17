@@ -60,7 +60,7 @@ const Capabilities = ({ user }) => {
     ];
 
     return (
-        <div className="flex flex-col items-center justify-center min-h-[60vh] max-w-4xl mx-auto px-4">
+        <div className="flex flex-col items-center justify-center min-h-[70vh] max-w-4xl mx-auto px-4">
             
             {/* Header / Greeting */}
             <motion.div 
@@ -68,12 +68,7 @@ const Capabilities = ({ user }) => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
                 className="text-center mb-12"
-            >
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-creozen-accent-blue/10 border border-creozen-accent-blue/20 text-creozen-accent-blue text-xs font-medium mb-6">
-                    <Sparkles size={12} />
-                    <span>System Online</span>
-                </div>
-                
+            >                
                 <h1 className="text-4xl md:text-5xl font-medium tracking-tight text-creozen-text-primary mb-4">
                     Good evening, {firstName}
                 </h1>

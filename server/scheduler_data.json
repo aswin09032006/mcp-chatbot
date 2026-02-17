@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "id": "task_1771249826749_vovu6uy7q",
+    "userId": "698b2c259f503feab3bc4b4b",
+    "instruction": "Check the project status on GitHub",
+    "cron": "0 9 * * 1",
+    "chatId": "69931f88150d467cec7f2e9a",
+    "createdAt": "2026-02-16T13:50:26.773Z"
+  }
+]

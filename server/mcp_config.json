@@ -47,6 +47,18 @@
             "args": [
                 "src/mcp/servers/database.js"
             ]
+        },
+        "filesystem": {
+            "command": "node",
+            "args": [
+                "src/mcp/servers/filesystem.js"
+            ]
+        },
+        "browser": {
+            "command": "node",
+            "args": [
+                "src/mcp/servers/browser.js"
+            ]
         }
     }
 }

@@ -11,7 +11,7 @@ const client = new OpenAI({
  */
 const sanitizeModelName = (modelId) => {
     // If it's one of the known GitHub models, return as is
-    const validModels = ['gpt-4o', 'gpt-4o-mini', 'o1', 'o1-mini', 'o1-preview', 'o3-mini'];
+    const validModels = ['gpt-4o', 'gpt-4.1-mini', 'gpt-4o-mini', 'gpt-5', 'o1', 'o1-mini', 'o1-preview', 'o3-mini'];
     if (validModels.includes(modelId)) return modelId;
 
     // Fallback mapping for custom or legacy names
@@ -509,16 +509,21 @@ AGENTIC REASONING GUIDELINES:
             conversation.push(assistantMessage);
 
             // Save Assistant Message (or intermediate tool call step) to DB
-            // NOTE: We typically only save the final assistant response or significant steps.
-            // For simplicity and correctness, we should save each assistant response in the chain.
             if (chatDoc) {
-                const msgToSave = {
-                    role: 'assistant',
-                    content: assistantMessage.content || '',
-                    tool_calls: assistantMessage.tool_calls,
-                    timestamp: new Date()
-                };
-                chatDoc.messages.push(msgToSave);
+                const lastMsg = chatDoc.messages[chatDoc.messages.length - 1];
+                if (lastMsg && lastMsg.role === 'assistant') {
+                    // Update existing assistant message in this turn
+                    lastMsg.content = assistantMessage.content || '';
+                    lastMsg.tool_calls = assistantMessage.tool_calls;
+                } else {
+                    // Create new assistant message
+                    chatDoc.messages.push({
+                        role: 'assistant',
+                        content: assistantMessage.content || '',
+                        tool_calls: assistantMessage.tool_calls,
+                        timestamp: new Date()
+                    });
+                }
                 await chatDoc.save();
             }
 

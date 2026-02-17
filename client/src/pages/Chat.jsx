@@ -16,7 +16,9 @@ import MemoryInspector from '../components/MemoryInspector';
 
 const MODELS = [
   { id: 'gpt-4o', name: 'GPT-4o', icon: Zap, description: 'Highest Intelligence' },
+  { id: 'gpt-4.1-mini', name: 'GPT-4.1 Mini', icon: Zap, description: 'High Complexity' },
   { id: 'gpt-4o-mini', name: 'GPT-4o Mini', icon: Zap, description: 'Fast & Efficient' },
+  { id: 'gpt-5', name: 'GPT-5', icon: Brain, description: 'Next Generation' },
   { id: 'o1', name: 'o1', icon: Brain, description: 'Advanced Reasoning' },
   { id: 'o1-mini', name: 'o1-mini', icon: Brain, description: 'Fast Reasoning' },
 ];
@@ -41,6 +43,7 @@ const Chat = ({ user, onLogout }) => {
   const { createTab, activeTabId, tabs } = useTabsStore();
   const { isMemoryInspectorOpen, toggleMemoryInspector } = useNeuralLinkStore();
   const prevTabCountRef = useRef(tabs.length);
+  const executingChatIdRef = useRef(null);
 
   const handleVoiceResult = (transcript) => {
     setInput((prev) => prev + (prev ? ' ' : '') + transcript);
@@ -89,6 +92,9 @@ const Chat = ({ user, onLogout }) => {
   // Load chat if chatId exists
   useEffect(() => {
     if (chatId) {
+        // Skip loading if this is the chat we are currently executing
+        if (chatId === executingChatIdRef.current) return;
+
         setIsLoading(true);
         axios.get(`/api/chats/${chatId}`)
             .then(res => {
@@ -100,7 +106,10 @@ const Chat = ({ user, onLogout }) => {
             })
             .finally(() => setIsLoading(false));
     } else {
-        setMessages([]);
+        // Only clear if we aren't currently executing a new chat
+        if (executingChatIdRef.current !== 'new') {
+            setMessages([]);
+        }
     }
   }, [chatId]);
 
@@ -213,6 +222,7 @@ const Chat = ({ user, onLogout }) => {
 
   const executeChat = async (currentHistory, currentAttachments = []) => {
     setIsLoading(true);
+    executingChatIdRef.current = chatId || 'new';
     // Determine user message (for optimistic update, though usually already added)
     const userMessage = currentHistory[currentHistory.length - 1];
 
@@ -307,6 +317,8 @@ const Chat = ({ user, onLogout }) => {
 
                         } else if (data.type === 'chat_created') {
                              console.log('Chat Created:', data.chatId);
+                             // Link this execution to the new ID to prevent history reload race
+                             executingChatIdRef.current = data.chatId;
                              // Update URL without reloading if we are starting a new chat
                              // Check if we are already on this chat to avoid loop (though unlikely)
                              if (window.location.pathname !== `/c/${data.chatId}`) {
@@ -406,6 +418,7 @@ const Chat = ({ user, onLogout }) => {
     } finally {
       setIsLoading(false);
       abortControllerRef.current = null;
+      executingChatIdRef.current = null;
     }
   };
 

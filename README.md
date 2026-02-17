@@ -1,108 +1,87 @@
-# Cortex (MCP)
+# Cortex (MCP) 🚀
 
-This is a production-ready web application that allows you to manage your Google Calendar, gmail, and reminders using a ChatGPT-like interface. It is built with the **Model Context Protocol (MCP)** architecture using **Node.js** for the backend and **React (Vite)** for the frontend.
+Cortex is a powerful, production-ready AI workspace assistant built on the **Model Context Protocol (MCP)**. It integrates your Google Workspace (Calendar, Gmail, Drive) and a local AI Browser into a unified Electron-based desktop application.
 
-## 🚀 Features
+![Cortex Banner](https://via.placeholder.com/800x400?text=Cortex+MCP+Chatbot+Interface)
 
-- **Natural Language Chat**: Talk to your workspace pleasantly.
-- **Google Calendar Integration**: List, create, update, and delete events.
-- **Gmail Integration**: List unread emails and send emails.
-- **Reminders**: Set and manage reminders.
-- **Smart Conflict Detection**: (Implemented via LLM reasoning)
-- **Modern UI**: Dark mode, responsive, and clean design.
+## ✨ key Features
 
-## 🛠️ Tech Stack
+### 🧠 Intelligent Workspace
+- **Google Workspace Integration**: Seamlessly manage Gmail, Calendar, and Contacts using natural language.
+- **Smart Reminders**: Set and track tasks with LLM-powered context awareness.
+- **History & Memory**: Persistent chat history and vector-based memory for long-term context.
 
-- **Backend**: Node.js, Express, MongoDB, Google APIs, Groq SDK.
-- **Frontend**: React, Vite, Tailwind CSS, Lucide Icons.
-- **Auth**: Google OAuth2.
-- **LLM**: Groq (Llama-3.1-70b).
+### 🌐 AI Browser Capabilities
+- **Autonomous Browsing**: Navigate the web, click elements, and extract information.
+- **Interactive UI**: View a side-by-side browser workspace while chatting.
+- **Cross-Service Workflows**: Combine web data with workspace actions (e.g., "Find a flight and add it to my calendar").
 
-## 📂 Project Structure
+### 🖥️ Desktop Experience
+- **Electron Powered**: A native desktop app experience for Windows/macOS/Linux.
+- **Multi-Tab Support**: Manage multiple browsing tasks simultaneously.
+- **Theme-Aware**: Fully responsive design with Dark/Light mode support.
 
+## 🛠️ Technical Stack
+
+- **Frontend**: React (Vite), Tailwind CSS, Lucide Icons, Electron (Renderer).
+- **Backend/Middle**: Express (Node.js), Electron (Main), MongoDB (Persistence), LanceDB (Vector Search).
+- **AI Core**: Groq SDK (Llama 3.1 70B), MCP Hub (Custom Tools).
+- **Integration**: Google Cloud Console (OAuth2, Workspace APIs).
+
+## 📂 Architecture Overview
+
+```mermaid
+graph TD
+    User([User]) <--> Renderer[Electron Renderer / React]
+    Renderer <--> Main[Electron Main Process]
+    Main <--> Server[Express Backend]
+    Server <--> MCP[MCP Hub / Tools]
+    Server <--> DB[(MongoDB / LanceDB)]
+    MCP <--> APIs[Google APIs / Groq]
 ```
-workspace-chat/
-├── client/                 # React Frontend
-│   ├── src/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   └── ...
-│   └── ...
-├── server/                 # Node.js Backend
-│   ├── src/
-│   │   ├── config/
-│   │   ├── models/
-│   │   ├── services/
-│   │   ├── tools/          # MCP Tools
-│   │   └── index.js
-│   └── ...
-└── README.md
-```
 
-## ⚡ Setup & Run Instructions
+*For a detailed breakdown, see [Architecture documentation](docs/Architecture.md).*
 
-**Note:** Due to environment restrictions during generation, you must install dependencies manually.
+## 🚀 Quick Start
 
-### 1. Prerequisites
+### Prerequisites
 - Node.js (v18+)
-- MongoDB (running locally or standard URI)
-- Google Cloud Project with Calendar, Gmail, and People APIs enabled.
-- Groq API Key.
+- MongoDB & LanceDB
+- Google Cloud Project Credentials
+- Groq API Key
 
-### 2. Backend Setup
-1. Navigate to the `server` directory:
+### Installation
+
+1. **Clone & Setup**:
+   ```bash
+   git clone <repo-url>
+   cd mcp-chatbot
+   ```
+
+2. **Backend**:
    ```bash
    cd server
-   ```
-2. Install dependencies:
-   ```bash
    npm install
-   ```
-   *If `package.json` was missing strict versions, `npm install express mongoose googleapis groq-sdk dotenv cors cookie-session`*
-3. Configure Environment Variables:
-   - Rename `.env.example` to `.env`.
-   - Fill in your `GOOGLE_CLIENT_ID`, `GOOGLE_CLIENT_SECRET`, `GROQ_API_KEY`, etc.
-   - Set `GOOGLE_REDIRECT_URI` to `http://localhost:5000/auth/google/callback`.
-4. Start the server:
-   ```bash
+   cp .env.example .env # Configure variables
    npm run dev
    ```
 
-### 3. Frontend Setup
-1. Navigate to the `client` directory:
+3. **Frontend (Desktop)**:
    ```bash
    cd client
-   ```
-2. Install dependencies:
-   ```bash
    npm install
-   ```
-3. Start the development server:
-   ```bash
-   npm run dev
+   npm run electron:dev
    ```
 
-### 4. Usage
-1. Open `http://localhost:5173` in your browser.
-2. Click "Sign in with Google".
-3. Grant permissions.
-4. Start chatting! e.g., "What meetings do I have today?"
+## 📖 Documentation
 
-## 🌐 Deployment
+- [Setup Guide](docs/Setup.md) - Detailed environment and API configuration.
+- [Feature Details](docs/Features.md) - Deep dive into tools and integrations.
+- [Architecture](docs/Architecture.md) - Technical design and data flow.
+- [CONTRIBUTING.md](CONTRIBUTING.md) - How to add new MCP tools.
 
-### Frontend (Netlify/Vercel)
-1. Push `client` folder to a repository (or root with specific build settings).
-2. Build command: `npm run build`.
-3. Publish directory: `dist`.
+## 🔒 Security
+Cortex uses Google OAuth2 for secure workspace access. Sessions are managed locally, and sensitive API keys are stored in environment variables.
 
-### Backend (Render/Railway)
-1. Push `server` folder.
-2. Build command: `npm install`.
-3. Start command: `node src/index.js`.
-4. Set Environment Variables in the dashboard.
-5. **Important**: Update `GOOGLE_REDIRECT_URI` and Frontend CORS origin in `server/src/index.js` for production URLs.
-
-## 🔒 Security Notes
-- Tokens are encrypted in transit (Google standard).
-- Session cookies are used for auth.
-- Use `https` in production.
+---
+*Built with ❤️ for the Advanced Agentic Coding community.*

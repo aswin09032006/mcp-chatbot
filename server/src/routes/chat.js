@@ -45,9 +45,15 @@ router.get('/:id', requireAuth, async (req, res) => {
         }
 
         // Filter out tool and system messages - only show user and assistant messages
-        // Also strip tool_calls from assistant messages if we are filtering tool results
+        // Also skip assistant messages that have no actual text content (after trimming)
         const filteredMessages = chat.messages
-            .filter(msg => msg.role === 'user' || msg.role === 'assistant')
+            .filter(msg => {
+                if (msg.role === 'user') return true;
+                if (msg.role === 'assistant') {
+                    return msg.content && msg.content.trim().length > 0;
+                }
+                return false;
+            })
             .map(msg => {
                 const m = msg.toObject();
                 if (m.role === 'assistant') {

@@ -5,7 +5,7 @@
     "type": "module",
     "main": "electron/main.cjs",
     "homepage": "./",
-    "author": "Antigravity",
+    "author": "Aswin",
     "description": "MCP Chatbot Electron App",
     "scripts": {
         "dev": "vite",
